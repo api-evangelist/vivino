@@ -1,8 +1,25 @@
 aid: vivino
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/vivino.png
 name: vivino
-description: vivino is a company surfaced as a portfolio company of balderton-capital, creandum and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Vivino is the world's largest online wine marketplace and wine-discovery
+  mobile app, founded in 2010 in Copenhagen, Denmark by Heini Zachariassen and Theis
+  Sondergaard. Users scan a wine label to get community ratings, reviews, and tasting
+  notes drawn from a database of more than 15 million wines and tens of millions of
+  members, and can buy wine directly through the integrated marketplace. As of an
+  enrichment pass on 2026-07-21, Vivino does not publish an official public API or
+  developer portal (the former developer.vivino.com subdomain 301-redirects to the
+  main site), so this profile carries identity and domain-security signals only.
 url: https://raw.githubusercontent.com/api-evangelist/vivino/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Wine
+- Marketplace
+- E-Commerce
+- Mobile App
+- Ratings and Reviews
+- Food and Beverage
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/vivino-domain-security.yml
 - type: Website
   url: https://www.vivino.com/
+- type: Support
+  url: https://www.vivino.com/contact
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
